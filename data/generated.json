@@ -1,0 +1,10 @@
+{
+  "version": "2026f",
+  "zic": "zic (Debian GLIBC 2.41-12+deb13u4) 2.41",
+  "zone_names": 597,
+  "distinct_tables": 344,
+  "transitions": 120943,
+  "minimum_unix_seconds": -5364662400,
+  "maximum_unix_seconds_exclusive": 16756761600,
+  "module_sha256": "5a8546fa95a5758fcdd698a5f8b405c9d1e9bc49101f883c2ad92909cd4a77f3"
+}

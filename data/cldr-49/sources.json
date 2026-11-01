@@ -1,0 +1,16 @@
+{
+  "version": "49",
+  "commit": "96e54b273d2da4ec6fbad350ba19ff23fa24a588",
+  "files": [
+    {
+      "file": "windowsZones.xml",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/96e54b273d2da4ec6fbad350ba19ff23fa24a588/common/supplemental/windowsZones.xml",
+      "sha256": "5f902f94106a396cb7774f0b0e1ca4dfecb686494045350c0b4935d378e3913b"
+    },
+    {
+      "file": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/96e54b273d2da4ec6fbad350ba19ff23fa24a588/LICENSE",
+      "sha256": "65eb33419e22a297550a811b5b535f5e532f9a7e0114b516c0ea18afd53c3804"
+    }
+  ]
+}
