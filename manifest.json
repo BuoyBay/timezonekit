@@ -1,1 +1,1 @@
-{"schema":1,"name":"timezonekit","version":"0.1.0","description":"Pinned IANA named timezones with explicit gap and overlap resolution"}
+{"schema":1,"name":"timezonekit","version":"0.1.0","description":"Resolve IANA timezones and daylight-saving transitions"}
