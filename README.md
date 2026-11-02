@@ -1,6 +1,6 @@
 # Resolve IANA timezones and daylight-saving transitions
 
-Named IANA timezones for Buoy with bundled **2026f** data and 64-bit transition
+Named IANA timezones with bundled **2026f** data and 64-bit transition
 lookups. Copy `packages/timezonekit-0.1.0.buipkg` into a consumer's packages
 directory, then `Import timezonekit`. No native package or OS timezone database
 is required at runtime.
@@ -52,8 +52,6 @@ On your own machine, install Buoy and run:
 ```sh
 buoy ai init --both
 ```
-
-The generated agent files and editor settings stay local and are ignored by Git.
 
 ## Contributing
 

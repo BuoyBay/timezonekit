@@ -78,8 +78,6 @@ The CLDR 49 XML and license are checked in under data/cldr-49, pinned to commit
 does not update the separate IANA transition database. Its XML typeVersion field
 is source metadata, not the version of TimeZoneKit's runtime rules.
 
-Maintainers run the private validation suite before release. See the repository README for public build instructions.
-
 ## Reproduction and verification
 
 The IANA source archive, URL and SHA-256 are under data/. The generator compiles
@@ -92,15 +90,7 @@ data/generated.json records the zic version, counts, range and table hash.
 /usr/bin/buoy pkg seal . -o packages/timezonekit-0.1.0.buipkg
 ```
 
-Regeneration requires zic. Verification uses Python zoneinfo as an independent
-TZif reader and checks 374,319 instants: before/at/after every transition in each
-distinct table, random instants and range edges across all names. Regressions cover
-gaps, overlaps, historical offsets and retained instants. Module/consumer checks
-cover six targets; all timezone oracle cases also pass native macOS ARM64 and
-Windows x86_64, including portable historical calendar presentation and local-time
-resolution. Native runners are `tests/standard_library_macos.py` and
-`tests/standard_library_windows.py`. `--link-target` optionally adds
-cross linking with a complete target SDK. BUOY/BPM_PACKAGER select toolchain commands.
+Regeneration requires `zic`. Preserve transition boundaries, gap/overlap policies, historical offsets and retained instants when updating the pinned tables. `BUOY` and `BPM_PACKAGER` select the toolchain commands.
 
 Independent implementation; no declaresub code is copied. The
 [public-domain IANA notice](../resources/IANA-LICENSE.txt) is bundled in the archive.
