@@ -1,4 +1,4 @@
-# Resolve IANA timezones and daylight-saving transitions
+# IANA timezones and DST transitions (2026f)
 
 Named IANA timezones with bundled **2026f** data and 64-bit transition
 lookups. Copy `packages/timezonekit-0.1.0.buipkg` into a consumer's packages
